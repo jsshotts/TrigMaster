@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAC227101FB524D500833937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2270F1FB524D500833937 /* AppDelegate.swift */; };
+		FAC227121FB524D500833937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC227111FB524D500833937 /* ViewController.swift */; };
+		FAC227151FB524D500833937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC227131FB524D500833937 /* Main.storyboard */; };
+		FAC227171FB524D500833937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC227161FB524D500833937 /* Assets.xcassets */; };
+		FAC2271A1FB524D500833937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC227181FB524D500833937 /* LaunchScreen.storyboard */; };
+		FAC227251FB524D500833937 /* TrigMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC227241FB524D500833937 /* TrigMasterTests.swift */; };
+		FAC227301FB524D500833937 /* TrigMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2272F1FB524D500833937 /* TrigMasterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC227211FB524D500833937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC227041FB524D500833937 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC2270B1FB524D500833937;
+			remoteInfo = TrigMaster;
+		};
+		FAC2272C1FB524D500833937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC227041FB524D500833937 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC2270B1FB524D500833937;
+			remoteInfo = TrigMaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAC2270C1FB524D500833937 /* TrigMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrigMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC2270F1FB524D500833937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC227111FB524D500833937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAC227141FB524D500833937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAC227161FB524D500833937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC227191FB524D500833937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC2271B1FB524D500833937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC227201FB524D500833937 /* TrigMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC227241FB524D500833937 /* TrigMasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigMasterTests.swift; sourceTree = "<group>"; };
+		FAC227261FB524D500833937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC2272B1FB524D500833937 /* TrigMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC2272F1FB524D500833937 /* TrigMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigMasterUITests.swift; sourceTree = "<group>"; };
+		FAC227311FB524D500833937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC227091FB524D500833937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC2271D1FB524D500833937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC227281FB524D500833937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAC227031FB524D500833937 = {
+			isa = PBXGroup;
+			children = (
+				FAC2270E1FB524D500833937 /* TrigMaster */,
+				FAC227231FB524D500833937 /* TrigMasterTests */,
+				FAC2272E1FB524D500833937 /* TrigMasterUITests */,
+				FAC2270D1FB524D500833937 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC2270D1FB524D500833937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2270C1FB524D500833937 /* TrigMaster.app */,
+				FAC227201FB524D500833937 /* TrigMasterTests.xctest */,
+				FAC2272B1FB524D500833937 /* TrigMasterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC2270E1FB524D500833937 /* TrigMaster */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2270F1FB524D500833937 /* AppDelegate.swift */,
+				FAC227111FB524D500833937 /* ViewController.swift */,
+				FAC227131FB524D500833937 /* Main.storyboard */,
+				FAC227161FB524D500833937 /* Assets.xcassets */,
+				FAC227181FB524D500833937 /* LaunchScreen.storyboard */,
+				FAC2271B1FB524D500833937 /* Info.plist */,
+			);
+			path = TrigMaster;
+			sourceTree = "<group>";
+		};
+		FAC227231FB524D500833937 /* TrigMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC227241FB524D500833937 /* TrigMasterTests.swift */,
+				FAC227261FB524D500833937 /* Info.plist */,
+			);
+			path = TrigMasterTests;
+			sourceTree = "<group>";
+		};
+		FAC2272E1FB524D500833937 /* TrigMasterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2272F1FB524D500833937 /* TrigMasterUITests.swift */,
+				FAC227311FB524D500833937 /* Info.plist */,
+			);
+			path = TrigMasterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC2270B1FB524D500833937 /* TrigMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC227341FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMaster" */;
+			buildPhases = (
+				FAC227081FB524D500833937 /* Sources */,
+				FAC227091FB524D500833937 /* Frameworks */,
+				FAC2270A1FB524D500833937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrigMaster;
+			productName = TrigMaster;
+			productReference = FAC2270C1FB524D500833937 /* TrigMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC2271F1FB524D500833937 /* TrigMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC227371FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMasterTests" */;
+			buildPhases = (
+				FAC2271C1FB524D500833937 /* Sources */,
+				FAC2271D1FB524D500833937 /* Frameworks */,
+				FAC2271E1FB524D500833937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC227221FB524D500833937 /* PBXTargetDependency */,
+			);
+			name = TrigMasterTests;
+			productName = TrigMasterTests;
+			productReference = FAC227201FB524D500833937 /* TrigMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC2272A1FB524D500833937 /* TrigMasterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC2273A1FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMasterUITests" */;
+			buildPhases = (
+				FAC227271FB524D500833937 /* Sources */,
+				FAC227281FB524D500833937 /* Frameworks */,
+				FAC227291FB524D500833937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC2272D1FB524D500833937 /* PBXTargetDependency */,
+			);
+			name = TrigMasterUITests;
+			productName = TrigMasterUITests;
+			productReference = FAC2272B1FB524D500833937 /* TrigMasterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC227041FB524D500833937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = UITeam;
+				TargetAttributes = {
+					FAC2270B1FB524D500833937 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					FAC2271F1FB524D500833937 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC2270B1FB524D500833937;
+					};
+					FAC2272A1FB524D500833937 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC2270B1FB524D500833937;
+					};
+				};
+			};
+			buildConfigurationList = FAC227071FB524D500833937 /* Build configuration list for PBXProject "TrigMaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC227031FB524D500833937;
+			productRefGroup = FAC2270D1FB524D500833937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC2270B1FB524D500833937 /* TrigMaster */,
+				FAC2271F1FB524D500833937 /* TrigMasterTests */,
+				FAC2272A1FB524D500833937 /* TrigMasterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC2270A1FB524D500833937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC2271A1FB524D500833937 /* LaunchScreen.storyboard in Resources */,
+				FAC227171FB524D500833937 /* Assets.xcassets in Resources */,
+				FAC227151FB524D500833937 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC2271E1FB524D500833937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC227291FB524D500833937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC227081FB524D500833937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC227121FB524D500833937 /* ViewController.swift in Sources */,
+				FAC227101FB524D500833937 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC2271C1FB524D500833937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC227251FB524D500833937 /* TrigMasterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC227271FB524D500833937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC227301FB524D500833937 /* TrigMasterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC227221FB524D500833937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC2270B1FB524D500833937 /* TrigMaster */;
+			targetProxy = FAC227211FB524D500833937 /* PBXContainerItemProxy */;
+		};
+		FAC2272D1FB524D500833937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC2270B1FB524D500833937 /* TrigMaster */;
+			targetProxy = FAC2272C1FB524D500833937 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC227131FB524D500833937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC227141FB524D500833937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAC227181FB524D500833937 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC227191FB524D500833937 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC227321FB524D500833937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC227331FB524D500833937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC227351FB524D500833937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrigMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAC227361FB524D500833937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrigMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FAC227381FB524D500833937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrigMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrigMaster.app/TrigMaster";
+			};
+			name = Debug;
+		};
+		FAC227391FB524D500833937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrigMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrigMaster.app/TrigMaster";
+			};
+			name = Release;
+		};
+		FAC2273B1FB524D500833937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TrigMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TrigMaster;
+			};
+			name = Debug;
+		};
+		FAC2273C1FB524D500833937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TrigMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TrigMaster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC227071FB524D500833937 /* Build configuration list for PBXProject "TrigMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC227321FB524D500833937 /* Debug */,
+				FAC227331FB524D500833937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC227341FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC227351FB524D500833937 /* Debug */,
+				FAC227361FB524D500833937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAC227371FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC227381FB524D500833937 /* Debug */,
+				FAC227391FB524D500833937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAC2273A1FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMasterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC2273B1FB524D500833937 /* Debug */,
+				FAC2273C1FB524D500833937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC227041FB524D500833937 /* Project object */;
+}
