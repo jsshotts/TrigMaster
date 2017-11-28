@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8302006B1FCDFFC300B18282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302006A1FCDFFC300B18282 /* Main.storyboard */; };
+		8302006D1FCDFFD400B18282 /* UnitCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302006C1FCDFFD400B18282 /* UnitCircleView.swift */; };
+		8302006F1FCDFFDC00B18282 /* CorrectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302006E1FCDFFDC00B18282 /* CorrectViewController.swift */; };
+		830200711FCDFFE200B18282 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830200701FCDFFE200B18282 /* LearnViewController.swift */; };
+		830200731FCDFFEB00B18282 /* IncorrectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830200721FCDFFEB00B18282 /* IncorrectViewController.swift */; };
 		FAC227101FB524D500833937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2270F1FB524D500833937 /* AppDelegate.swift */; };
 		FAC227121FB524D500833937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC227111FB524D500833937 /* ViewController.swift */; };
-		FAC227151FB524D500833937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC227131FB524D500833937 /* Main.storyboard */; };
 		FAC227171FB524D500833937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC227161FB524D500833937 /* Assets.xcassets */; };
 		FAC2271A1FB524D500833937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC227181FB524D500833937 /* LaunchScreen.storyboard */; };
 		FAC227251FB524D500833937 /* TrigMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC227241FB524D500833937 /* TrigMasterTests.swift */; };
@@ -34,10 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8302006A1FCDFFC300B18282 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8302006C1FCDFFD400B18282 /* UnitCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitCircleView.swift; sourceTree = "<group>"; };
+		8302006E1FCDFFDC00B18282 /* CorrectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectViewController.swift; sourceTree = "<group>"; };
+		830200701FCDFFE200B18282 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		830200721FCDFFEB00B18282 /* IncorrectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncorrectViewController.swift; sourceTree = "<group>"; };
 		FAC2270C1FB524D500833937 /* TrigMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrigMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC2270F1FB524D500833937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC227111FB524D500833937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAC227141FB524D500833937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC227161FB524D500833937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC227191FB524D500833937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC2271B1FB524D500833937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +107,11 @@
 			children = (
 				FAC2270F1FB524D500833937 /* AppDelegate.swift */,
 				FAC227111FB524D500833937 /* ViewController.swift */,
-				FAC227131FB524D500833937 /* Main.storyboard */,
+				8302006C1FCDFFD400B18282 /* UnitCircleView.swift */,
+				830200701FCDFFE200B18282 /* LearnViewController.swift */,
+				8302006E1FCDFFDC00B18282 /* CorrectViewController.swift */,
+				830200721FCDFFEB00B18282 /* IncorrectViewController.swift */,
+				8302006A1FCDFFC300B18282 /* Main.storyboard */,
 				FAC227161FB524D500833937 /* Assets.xcassets */,
 				FAC227181FB524D500833937 /* LaunchScreen.storyboard */,
 				FAC2271B1FB524D500833937 /* Info.plist */,
@@ -234,7 +246,7 @@
 			files = (
 				FAC2271A1FB524D500833937 /* LaunchScreen.storyboard in Resources */,
 				FAC227171FB524D500833937 /* Assets.xcassets in Resources */,
-				FAC227151FB524D500833937 /* Main.storyboard in Resources */,
+				8302006B1FCDFFC300B18282 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830200711FCDFFE200B18282 /* LearnViewController.swift in Sources */,
+				8302006D1FCDFFD400B18282 /* UnitCircleView.swift in Sources */,
 				FAC227121FB524D500833937 /* ViewController.swift in Sources */,
 				FAC227101FB524D500833937 /* AppDelegate.swift in Sources */,
+				830200731FCDFFEB00B18282 /* IncorrectViewController.swift in Sources */,
+				8302006F1FCDFFDC00B18282 /* CorrectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAC227131FB524D500833937 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAC227141FB524D500833937 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAC227181FB524D500833937 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,6 +513,7 @@
 				FAC227361FB524D500833937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAC227371FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMasterTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +522,7 @@
 				FAC227391FB524D500833937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAC2273A1FB524D500833937 /* Build configuration list for PBXNativeTarget "TrigMasterUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +531,7 @@
 				FAC2273C1FB524D500833937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
