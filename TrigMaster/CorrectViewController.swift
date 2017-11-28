@@ -25,10 +25,14 @@ class CorrectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let angleInt = 0
+        
+        
         UnitCircleView.radius = (UnitCircleView.frame.size.height/2)/1.2
         UnitCircleView.angle = angle
         UnitCircleView.setBackgroundColor()
         UnitCircleView.setLabelTextForFirstTime()
+        view.backgroundColor? = UIColor.darkGray
         
 //        if UnitCircleView.angle.truncatingRemainder(dividingBy: 2*CGFloat.pi) > 2{
 //            UnitCircleView.angle = UnitCircleView.angle - (2*CGFloat.pi)

@@ -30,6 +30,7 @@ class IncorrectViewController: UIViewController {
         UnitCircleView.setBackgroundColor()
         UnitCircleView.setLabelTextForFirstTime()
         UnitCircleView.isUserInteractionEnabled = false
+        view.backgroundColor? = UIColor.darkGray
         
 //        print(UnitCircleView.angle)
 //        if UnitCircleView.angle.truncatingRemainder(dividingBy: 2*CGFloat.pi) > 2{

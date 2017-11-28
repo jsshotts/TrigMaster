@@ -19,7 +19,7 @@ class UnitCircleView: UIView {
     var radius = CGFloat(300)
     
     func setBackgroundColor() {
-        self.backgroundColor = UIColor.lightGray
+        self.backgroundColor = UIColor.clear
     }
    
     
@@ -34,7 +34,7 @@ class UnitCircleView: UIView {
             labelWidth.text = "0"
             labelHeight.text = "1"
         }
-        labelWidth.textColor = UIColor.blue
+        labelWidth.textColor = UIColor.cyan
         
         labelHeight.text = "\(abs(sin(angle)))"
         if abs(sin(angle)) < 0.000001{
@@ -47,6 +47,7 @@ class UnitCircleView: UIView {
         if angle == 0.0{
             labelAngle.text = "0"
         }
+        labelAngle.textColor = UIColor.orange
         
         self.addSubview(labelWidth)
         self.addSubview(labelHeight)
@@ -76,7 +77,7 @@ class UnitCircleView: UIView {
         
         context?.move(to: CGPoint(x: centerx, y: centery))
         context?.addLine(to: CGPoint(x: x2, y: centery))
-        context?.setStrokeColor(UIColor.blue.cgColor)
+        context?.setStrokeColor(UIColor.cyan.cgColor)
         context?.strokePath()
         
         context?.move(to: CGPoint(x: x2, y: centery))
@@ -88,7 +89,7 @@ class UnitCircleView: UIView {
         context?.move(to: CGPoint(x: x2, y: CGFloat(self.frame.size.height) - y2))
         context?.addLine(to: CGPoint(x: centerx, y: centery))
         
-        context?.setStrokeColor(UIColor.black.cgColor)
+        context?.setStrokeColor(UIColor.orange.cgColor)
         context?.strokePath()
         
         labelWidth.center.x = (centerx + x2)/2

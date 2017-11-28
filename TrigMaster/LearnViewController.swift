@@ -415,73 +415,8 @@ class LearnViewController: UIViewController {
  
     }
     
-//    override func viewDidDisappear(_ animated: Bool) {
-//
-//        tempTrigFunc = trigSet[Int(arc4random_uniform(6))]
-//        tempDivisor = divisorSet[Int(arc4random_uniform(10))]
-//
-//        let number = Int(arc4random_uniform(10))
-//        let numberFloat = CGFloat(number)
-//
-//        question = "\(tempTrigFunc)  \(number)π\(tempDivisor)"
-//
-//        if number == 0 {
-//            question = "\(tempTrigFunc) 0"
-//        }
-//        if number == 1 {
-//            question = "\(tempTrigFunc) π\(tempDivisor)"
-//        }
-//
-//
-//
-//        //divisor check
-//        if tempDivisor == divisorSet[0]{
-//            angle = numberFloat * π
-//        }
-//        if tempDivisor == divisorSet[1]{
-//            angle = numberFloat/2
-//        }
-//        if tempDivisor == divisorSet[2]{
-//            angle = numberFloat/3
-//        }
-//        if tempDivisor == divisorSet[4]{
-//            angle = numberFloat/4
-//        }
-//        if tempDivisor == divisorSet[7]{
-//            angle = numberFloat/6
-//        }
-//
-//
-//
-//        //temporary answer
-//        if tempTrigFunc == trigSet[0]{
-//            tempAnswer = sin(angle)
-//        }
-//        if tempTrigFunc == trigSet[1]{
-//            tempAnswer = cos(angle)
-//        }
-//        if tempTrigFunc == trigSet[2]{
-//            tempAnswer = tan(angle)
-//        }
-//        if tempTrigFunc == trigSet[3]{
-//            tempAnswer = 1/sin(angle)
-//        }
-//        if tempTrigFunc == trigSet[4]{
-//            tempAnswer = 1/cos(angle)
-//        }
-//        if tempTrigFunc == trigSet[5]{
-//            tempAnswer = 1/tan(angle)
-//        }
-//
-//
-//        valueLocation = arc4random_uniform(4)
-//        print(tempTrigFunc)
-//        print(tempAnswer)
-//    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidDisappear(_ animated: Bool) {
+
         tempTrigFunc = trigSet[Int(arc4random_uniform(6))]
         tempDivisor = divisorSet[Int(arc4random_uniform(10))]
         
@@ -501,11 +436,11 @@ class LearnViewController: UIViewController {
         
         if tempDivisor == divisorSet[0]{
             angle = numberFloat * π
-           
+            
         }
         if tempDivisor == divisorSet[1]{
             angle = (numberFloat * π)/2
-           
+            
         }
         if tempDivisor == divisorSet[2]{
             angle = (numberFloat *  π)/3
@@ -513,7 +448,7 @@ class LearnViewController: UIViewController {
         }
         if tempDivisor == divisorSet[4]{
             angle = (numberFloat * π)/4
-           
+            
         }
         if tempDivisor == divisorSet[7]{
             angle = (numberFloat * π)/6
@@ -542,6 +477,75 @@ class LearnViewController: UIViewController {
         }
         
         
+        valueLocation = arc4random_uniform(4)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print(viewDidLoad())
+        
+        view.backgroundColor? = UIColor.darkGray
+        tempTrigFunc = trigSet[Int(arc4random_uniform(6))]
+        tempDivisor = divisorSet[Int(arc4random_uniform(10))]
+
+        let number = Int(arc4random_uniform(10))
+        let numberFloat = CGFloat(number)
+
+        question = "\(tempTrigFunc) \(number)π\(tempDivisor)"
+
+
+        if number == 0 {
+            question = "\(tempTrigFunc) 0"
+        }
+        if number == 1 {
+            question = "\(tempTrigFunc) π\(tempDivisor)"
+        }
+
+
+        if tempDivisor == divisorSet[0]{
+            angle = numberFloat * π
+
+        }
+        if tempDivisor == divisorSet[1]{
+            angle = (numberFloat * π)/2
+
+        }
+        if tempDivisor == divisorSet[2]{
+            angle = (numberFloat *  π)/3
+
+        }
+        if tempDivisor == divisorSet[4]{
+            angle = (numberFloat * π)/4
+
+        }
+        if tempDivisor == divisorSet[7]{
+            angle = (numberFloat * π)/6
+
+        }
+
+
+
+        if tempTrigFunc == trigSet[0]{
+            tempAnswer = sin(angle)
+        }
+        if tempTrigFunc == trigSet[1]{
+            tempAnswer = cos(angle)
+        }
+        if tempTrigFunc == trigSet[2]{
+            tempAnswer = sin(angle)/cos(angle)
+        }
+        if tempTrigFunc == trigSet[3]{
+            tempAnswer = 1/(sin(angle))
+        }
+        if tempTrigFunc == trigSet[4]{
+            tempAnswer = 1/(cos(angle))
+        }
+        if tempTrigFunc == trigSet[5]{
+            tempAnswer = cos(angle)/sin(angle)
+        }
+
+
         valueLocation = arc4random_uniform(4)
     }
 
@@ -575,5 +579,8 @@ class LearnViewController: UIViewController {
 
     }
  
+    @IBAction func unwindToQuestion(segue: UIStoryboardSegue){
+        
+    }
 
 }

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         canvasView.setLabelTextForFirstTime()
         canvasView.isUserInteractionEnabled = true
         view.addSubview(canvasView)
-        view.backgroundColor? = UIColor.purple
+        view.backgroundColor? = UIColor.darkGray
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -54,6 +54,9 @@ class ViewController: UIViewController {
         }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+    }
+    @IBAction func unwindToQuestion(segue: UIStoryboardSegue){
+        
     }
     
 }
