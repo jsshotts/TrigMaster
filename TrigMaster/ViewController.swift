@@ -29,35 +29,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "ShowQuizScene"{
-            //            let destination = segue.destination as? LearnViewController
-            //
-            //            let trigSet = ["sin", "cos", "tan", "csc", "sec", "cot"]
-            //            let divisorSet = ["", "/3", "/4", "/6"]
-            //            let π = Float.pi
-            //            print (π)
-            
-            
-            
-            //            let value = Int(arc4random_uniform(20))
-            //            let valueFloat = Float(value)
-            //
-            //            destination?.question = "\(trigSet[Int(arc4random_uniform(6))])  \(value)π\(divisorSet[Int(arc4random_uniform(4))])"
-            //
-            //            destination?.value = valueFloat
-            //            destination?.valueInt = value
-            //
-            //            destination?.valueLocation = arc4random_uniform(4)
-            
-            
         }
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    @IBAction func unwindToQuestion(segue: UIStoryboardSegue){
+    @IBAction func unwindToMain(segue: UIStoryboardSegue){
         
     }
     
 }
-

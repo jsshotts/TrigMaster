@@ -26,42 +26,19 @@ class IncorrectViewController: UIViewController {
         super.viewDidLoad()
         
         UnitCircleView.radius = (UnitCircleView.frame.size.height/2)/1.2
+        
         UnitCircleView.angle = angle
+        UnitCircleView.angle = UnitCircleView.angle.truncatingRemainder(dividingBy: 2*CGFloat.pi)
+        
         UnitCircleView.setBackgroundColor()
         UnitCircleView.setLabelTextForFirstTime()
-        UnitCircleView.isUserInteractionEnabled = false
         view.backgroundColor? = UIColor.darkGray
-        
-//        print(UnitCircleView.angle)
-//        if UnitCircleView.angle.truncatingRemainder(dividingBy: 2*CGFloat.pi) > 2{
-//            UnitCircleView.angle = UnitCircleView.angle - (2*CGFloat.pi)
-//            print(UnitCircleView.angle)
-//            if UnitCircleView.angle.truncatingRemainder(dividingBy: 2*CGFloat.pi) > 2{
-//                UnitCircleView.angle = UnitCircleView.angle - (2*CGFloat.pi)
-//                print(UnitCircleView.angle)
-//                if UnitCircleView.angle.truncatingRemainder(dividingBy: 2*CGFloat.pi) > 2{
-//                    UnitCircleView.angle = UnitCircleView.angle - (2*CGFloat.pi)
-//                    print(UnitCircleView.angle)
-//                }
-//            }
-//        }
+        UnitCircleView.isUserInteractionEnabled = false
         questionLabel.text = labelText
-       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-    }
- 
-
 }

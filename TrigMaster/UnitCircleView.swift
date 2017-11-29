@@ -21,7 +21,6 @@ class UnitCircleView: UIView {
     func setBackgroundColor() {
         self.backgroundColor = UIColor.clear
     }
-   
     
     let labelHeight = UILabel(frame: CGRect(x: 20, y: 20, width: 50, height: 15))
     let labelWidth = UILabel(frame: CGRect(x: 20, y: 40, width: 50, height: 15))
@@ -102,49 +101,22 @@ class UnitCircleView: UIView {
         if angle >= (3*CGFloat.pi)/2{
             labelHeight.center.x = x2 + self.frame.size.width/16
         }
-//
-//        if angle > (5*CGFloat.pi)/2{
-//            labelHeight.center.x = x2 + self.frame.size.width/16
-//        }
-//        if angle >= (7*CGFloat.pi)/2{
-//            labelHeight.center.x = x2 + self.frame.size.width/16
-//        }
-//
-//        if angle > (9*CGFloat.pi)/2{
-//            labelHeight.center.x = x2 + self.frame.size.width/16
-//        }
-//        if angle >= (11*CGFloat.pi)/2{
-//            labelHeight.center.x = x2 + self.frame.size.width/16
-//        }
+        if angle == (CGFloat.pi){
+            labelHeight.center.x = x2
+        }
+        
         labelHeight.center.y = ((CGFloat(self.frame.size.height) - y2) + centery)/2
         
         labelAngle.center.x = centerx + (centerx + x2)/15
         if angle >= CGFloat.pi{
             labelAngle.center.x = centerx - (centerx + x2)/20
         }
-//        if angle > 2*CGFloat.pi{
-//            labelAngle.center.x = centerx - (centerx + x2)/20
-//        }
-//        if angle >= 3*CGFloat.pi{
-//            labelAngle.center.x = centerx - (centerx + x2)/20
-//        }
-//        if angle > 4*CGFloat.pi{
-//            labelAngle.center.x = centerx - (centerx + x2)/20
-//        }
-//        if angle >= 5*CGFloat.pi{
-//            labelAngle.center.x = centerx - (centerx + x2)/20
-//        }
-//        if angle > 6*CGFloat.pi{
-//            labelAngle.center.x = centerx - (centerx + x2)/20
-//        }
 
         labelAngle.center.y = centery - self.frame.size.height/40
-        
         
     }
     
     func drawSmallCircle(){
-        
         
         let centerx = CGFloat(self.frame.size.width/2)
         let centery = CGFloat(self.frame.size.height/2)
@@ -158,7 +130,6 @@ class UnitCircleView: UIView {
         
         context?.setStrokeColor(UIColor.green.cgColor)
         context?.strokePath()
-        
         
     }
     
@@ -219,7 +190,8 @@ class UnitCircleView: UIView {
         let xdistance = position!.x - self.frame.size.width/2
         let ydistance = -(position!.y - self.frame.size.height/2)
         angle = atan2(ydistance, xdistance)
-
+        
+        checkToSnap()
 
         if cos(angle) >= 0{
             if cos(angle) < 0.00000000001{
@@ -263,16 +235,47 @@ class UnitCircleView: UIView {
         self.labelAngle.text = "\(angle)"
     }
     
-    func moveLabels(y: CGFloat){
+    func snapAngle(desiredAngle: CGFloat){
         
-        self.labelWidth.center.y = self.labelWidth.center.y + y
-        self.labelHeight.center.y = self.labelHeight.center.y + y
-        self.labelAngle.center.y = self.labelHeight.center.y + y
+        if self.angle < desiredAngle + 0.1{
+            if self.angle > desiredAngle - 0.1{
+            self.angle = desiredAngle
+            }
+        }
+    }
+    
+    func checkToSnap(){
+        
+        snapAngle(desiredAngle: -0.0)
+        snapAngle(desiredAngle: -CGFloat.pi/6)
+        snapAngle(desiredAngle: -CGFloat.pi/4)
+        snapAngle(desiredAngle: -CGFloat.pi/3)
+        snapAngle(desiredAngle: -CGFloat.pi/2)
+        snapAngle(desiredAngle: -5*CGFloat.pi/6)
+        snapAngle(desiredAngle: -3*CGFloat.pi/4)
+        snapAngle(desiredAngle: -2*CGFloat.pi/3)
+        snapAngle(desiredAngle: -CGFloat.pi)
+        
+        snapAngle(desiredAngle: 0.0)
+        snapAngle(desiredAngle: CGFloat.pi/6)
+        snapAngle(desiredAngle: CGFloat.pi/4)
+        snapAngle(desiredAngle: CGFloat.pi/3)
+        snapAngle(desiredAngle: CGFloat.pi/2)
+        snapAngle(desiredAngle: 5*CGFloat.pi/6)
+        snapAngle(desiredAngle: 3*CGFloat.pi/4)
+        snapAngle(desiredAngle: 2*CGFloat.pi/3)
+        snapAngle(desiredAngle: CGFloat.pi)
+        
+        
+//        snapAngle(desiredAngle: 7*CGFloat.pi/6)
+//        snapAngle(desiredAngle: 5*CGFloat.pi/4)
+//        snapAngle(desiredAngle: 4*CGFloat.pi/3)
+//        snapAngle(desiredAngle: 3*CGFloat.pi/2)
+//        snapAngle(desiredAngle: 11*CGFloat.pi/6)
+//        snapAngle(desiredAngle: 7*CGFloat.pi/4)
+//        snapAngle(desiredAngle: 5*CGFloat.pi/3)
         
     }
-
-    
-
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
