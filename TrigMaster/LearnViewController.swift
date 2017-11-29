@@ -93,9 +93,6 @@ class LearnViewController: UIViewController {
         buttonSet[Int(valueLocation)]!.setTitle("\(tempAnswerString)", for: UIControlState.normal)
         buttonSet.remove(at: Int(valueLocation))
         
-        print (tempAnswer)
-        print ("tempAnswer: \(tempAnswerString)")
-        print ("\(arc4random_uniform(2))")
         
         tempAnswerSet.remove(at: answerIndex)
         
