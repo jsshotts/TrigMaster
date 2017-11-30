@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UnitCircleView.radius = (UnitCircleView.frame.size.height/2)/1.3
+        UnitCircleView.radius = (UnitCircleView.frame.size.height/2)/1.4
         UnitCircleView.setBackgroundColor()
         UnitCircleView.setLabelTextForFirstTime()
         UnitCircleView.isUserInteractionEnabled = true
