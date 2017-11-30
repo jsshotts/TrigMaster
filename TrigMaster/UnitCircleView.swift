@@ -10,6 +10,9 @@ import UIKit
 
 class UnitCircleView: UIView {
     
+    let angleSet = ["0", "π/6", "π/4", "π/3", "π/2", "5π/6", "3π/4", "2π/3", "π", "7π/6", "5π/4", "4π/3", "3π/2", "11π/6", "7π/4", "5π/3"]
+    let lengthSet = ["0", "1/2", "√2/2"]
+    
     var angle = CGFloat(0)
     
         {

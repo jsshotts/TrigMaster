@@ -19,7 +19,7 @@ class LearnViewController: UIViewController {
     let divisorSet = ["", "/2", "/3", "/3", "/4", "/4", "/4", "/6", "/6", "/6"]
     let π = CGFloat.pi
     
-    let answerSet = ["1", "-1", "0", "1/2", "-1/2", "sqrt(2)/2", "-sqrt(2)/2", "sqrt(3)/2", "-sqrt(3)/2", "undefined", "2", "-2", "2/sqrt(2)", "-2/sqrt(2)", "2/sqrt(3)", "-2/sqrt(3)"]
+    let answerSet = ["1", "-1", "0", "1/2", "-1/2", "√2/2", "-√2/2", "√3/2", "-√3/2", "undefined", "2", "-2", "2/√2", "-2/√2", "2/√3", "-2/√3"]
     var tempTrigFunc = ""
     var tempDivisor = ""
     var tempAnswer = CGFloat(0)
