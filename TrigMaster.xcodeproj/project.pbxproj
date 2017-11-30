@@ -208,7 +208,6 @@
 				TargetAttributes = {
 					FAC2270B1FB524D500833937 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5XFLTTJ8H4;
 						ProvisioningStyle = Automatic;
 					};
 					FAC2271F1FB524D500833937 = {
@@ -425,10 +424,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5XFLTTJ8H4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TrigMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = calpoly.ratings.Trigmaster24;
+				PRODUCT_BUNDLE_IDENTIFIER = calpoly.ratings.Trigmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -438,10 +437,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5XFLTTJ8H4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TrigMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = calpoly.ratings.Trigmaster24;
+				PRODUCT_BUNDLE_IDENTIFIER = calpoly.ratings.Trigmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
