@@ -221,7 +221,7 @@ class LearnViewController: UIViewController {
         super.viewDidLoad()
         
         
-        view.backgroundColor? = UIColor.darkGray
+        //view.backgroundColor? = UIColor.darkGray
         tempTrigFunc = trigSet[Int(arc4random_uniform(6))]
         tempDivisor = divisorSet[Int(arc4random_uniform(10))]
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CEF3F341FCFB3D3009316DF /* VinylRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF3F331FCFB3D2009316DF /* VinylRegular.otf */; };
 		8302006B1FCDFFC300B18282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302006A1FCDFFC300B18282 /* Main.storyboard */; };
 		8302006D1FCDFFD400B18282 /* UnitCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302006C1FCDFFD400B18282 /* UnitCircleView.swift */; };
 		8302006F1FCDFFDC00B18282 /* CorrectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302006E1FCDFFDC00B18282 /* CorrectViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CEF3F331FCFB3D2009316DF /* VinylRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VinylRegular.otf; sourceTree = "<group>"; };
 		8302006A1FCDFFC300B18282 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8302006C1FCDFFD400B18282 /* UnitCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitCircleView.swift; sourceTree = "<group>"; };
 		8302006E1FCDFFDC00B18282 /* CorrectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8302006E1FCDFFDC00B18282 /* CorrectViewController.swift */,
 				830200721FCDFFEB00B18282 /* IncorrectViewController.swift */,
 				8302006A1FCDFFC300B18282 /* Main.storyboard */,
+				0CEF3F331FCFB3D2009316DF /* VinylRegular.otf */,
 				FAC227161FB524D500833937 /* Assets.xcassets */,
 				FAC227181FB524D500833937 /* LaunchScreen.storyboard */,
 				FAC2271B1FB524D500833937 /* Info.plist */,
@@ -205,6 +208,7 @@
 				TargetAttributes = {
 					FAC2270B1FB524D500833937 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KF87P75PYN;
 						ProvisioningStyle = Automatic;
 					};
 					FAC2271F1FB524D500833937 = {
@@ -247,6 +251,7 @@
 				FAC2271A1FB524D500833937 /* LaunchScreen.storyboard in Resources */,
 				FAC227171FB524D500833937 /* Assets.xcassets in Resources */,
 				8302006B1FCDFFC300B18282 /* Main.storyboard in Resources */,
+				0CEF3F341FCFB3D3009316DF /* VinylRegular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +425,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KF87P75PYN;
 				INFOPLIST_FILE = TrigMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMaster;
+				PRODUCT_BUNDLE_IDENTIFIER = calpoly.ratings.Trigmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -432,9 +438,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KF87P75PYN;
 				INFOPLIST_FILE = TrigMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = UITeam.TrigMaster;
+				PRODUCT_BUNDLE_IDENTIFIER = calpoly.ratings.Trigmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
