@@ -147,7 +147,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUt-hY-tqa">
-                                <rect key="frame" x="0.0" y="26" width="88" height="49"/>
+                                <rect key="frame" x="8" y="26" width="88" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VinylRegular" family="Vinyl" pointSize="18"/>
                                 <state key="normal" title="&lt; Back">

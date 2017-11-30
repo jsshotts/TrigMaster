@@ -11,7 +11,7 @@ import UIKit
 class UnitCircleView: UIView {
     
     let angleSet = ["0", "π/6", "π/4", "π/3", "π/2", "5π/6", "3π/4", "2π/3", "π", "7π/6", "5π/4", "4π/3", "3π/2", "11π/6", "7π/4", "5π/3"]
-    let lengthSet = ["0", "1/2", "√2/2"]
+    let lengthSet = ["0", "1/2", "√2/2", "√3/2", "1"]
     
     var angle = CGFloat(0)
     
@@ -50,6 +50,8 @@ class UnitCircleView: UIView {
             labelAngle.text = "0"
         }
         labelAngle.textColor = UIColor.orange
+        
+        checkToSnap()
         
         self.addSubview(labelWidth)
         self.addSubview(labelHeight)
@@ -193,71 +195,153 @@ class UnitCircleView: UIView {
         let xdistance = position!.x - self.frame.size.width/2
         let ydistance = -(position!.y - self.frame.size.height/2)
         angle = atan2(ydistance, xdistance)
-        
-        checkToSnap()
 
-        if cos(angle) >= 0{
-            if cos(angle) < 0.00000000001{
-                self.labelWidth.text = "0"
-                self.labelHeight.text = "1"
-            }
-            else{
-                self.labelWidth.text = "\(abs(cos(angle)))"
-            }
-        }
-        if cos(angle) < 0{
-            if cos(angle) > -0.000000000001{
-                self.labelWidth.text = "0"
-                self.labelHeight.text = "1"
-            }
-            else{
-                self.labelWidth.text = "\(abs(cos(angle)))"
-            }
-        }
-        if sin(angle) >= 0{
-            if sin(angle) < 0.00000000001{
-                self.labelHeight.text = "0"
-                self.labelWidth.text = "1"
-            }
-            else{
-                self.labelHeight.text = "\(abs(sin(angle)))"
-            }
-        }
-        if sin(angle) < 0{
-            if sin(angle) > -0.00000000001{
-                self.labelHeight.text = "0"
-                self.labelWidth.text = "1"
-            }
-            else{
-                self.labelHeight.text = "\(abs(sin(angle)))"
-            }
-        }
+        self.labelWidth.text = "\(abs(cos(angle)))"
+        self.labelHeight.text = "\(abs(sin(angle)))"
+        
         if angle < 0 {
             angle = angle + 2*CGFloat.pi
         }
         self.labelAngle.text = "\(angle)"
+        
+        checkToSnap()
     }
     
     func snapAngle(desiredAngle: CGFloat){
         
-        if self.angle < desiredAngle + 0.1{
-            if self.angle > desiredAngle - 0.1{
+        if angle < desiredAngle + 0.1{
+            if angle > desiredAngle - 0.1{
             self.angle = desiredAngle
+            }
+        }
+        
+        print(desiredAngle)
+    
+        if angle < 0.0 + 0.09{
+            if self.angle > 0.0 - 0.09{
+                self.labelAngle.text  = angleSet[0]
+                self.labelWidth.text = lengthSet[4]
+                self.labelHeight.text = lengthSet[0]
+            }
+        }
+        if angle < CGFloat.pi/6 + 0.09{
+            if angle > CGFloat.pi/6 - 0.09{
+                self.labelAngle.text = angleSet[1]
+                self.labelWidth.text = lengthSet[3]
+                self.labelHeight.text = lengthSet[1]
+            }
+        }
+        if angle < CGFloat.pi/4 + 0.09{
+            if angle > CGFloat.pi/4 - 0.09{
+                self.labelAngle.text = angleSet[2]
+                self.labelWidth.text = lengthSet[2]
+                self.labelHeight.text = lengthSet[2]
+            }
+        }
+        if angle < CGFloat.pi/3 + 0.09{
+            if angle > CGFloat.pi/3 - 0.09{
+                self.labelAngle.text = angleSet[3]
+                self.labelWidth.text = lengthSet[1]
+                self.labelHeight.text = lengthSet[3]
+            }
+        }
+        if angle < CGFloat.pi/2 + 0.09{
+            if angle > CGFloat.pi/2 - 0.09{
+                self.labelAngle.text = angleSet[4]
+                self.labelWidth.text = lengthSet[0]
+                self.labelHeight.text = lengthSet[4]
+            }
+        }
+        if angle < 5*CGFloat.pi/6 + 0.09{
+            if angle > 5*CGFloat.pi/6 - 0.09{
+                self.labelAngle.text = angleSet[5]
+                self.labelWidth.text = lengthSet[3]
+                self.labelHeight.text = lengthSet[1]
+            }
+        }
+        if angle < 3*CGFloat.pi/4 + 0.09{
+            if angle > 3*CGFloat.pi/4 - 0.09{
+                self.labelAngle.text = angleSet[6]
+                self.labelWidth.text = lengthSet[2]
+                self.labelHeight.text = lengthSet[2]
+            }
+        }
+        if angle < 2*CGFloat.pi/3 + 0.09{
+            if angle > 2*CGFloat.pi/3 - 0.09{
+                self.labelAngle.text = angleSet[7]
+                self.labelWidth.text = lengthSet[1]
+                self.labelHeight.text = lengthSet[3]
+            }
+        }
+        if angle < CGFloat.pi + 0.09{
+            if angle > CGFloat.pi - 0.09 {
+                self.labelAngle.text = angleSet[8]
+                self.labelWidth.text = lengthSet[4]
+                self.labelHeight.text = lengthSet[0]
+            }
+        }
+        if angle < 7*CGFloat.pi/6 + 0.09{
+            if angle > 7*CGFloat.pi/6 - 0.09 {
+                self.labelAngle.text = angleSet[9]
+                self.labelWidth.text = lengthSet[3]
+                self.labelHeight.text = lengthSet[1]
+            }
+        }
+        if angle < 5*CGFloat.pi/4 + 0.09{
+            if angle > 5*CGFloat.pi/4 - 0.09 {
+                self.labelAngle.text = angleSet[10]
+                self.labelWidth.text = lengthSet[2]
+                self.labelHeight.text = lengthSet[2]
+            }
+        }
+        if angle < 4*CGFloat.pi/3 + 0.09{
+            if angle > 4*CGFloat.pi/3 - 0.09 {
+                self.labelAngle.text = angleSet[11]
+                self.labelWidth.text = lengthSet[1]
+                self.labelHeight.text = lengthSet[3]
+            }
+        }
+        if angle < 3*CGFloat.pi/2 + 0.09{
+            if angle > 3*CGFloat.pi/2 - 0.09 {
+                self.labelAngle.text = angleSet[12]
+                self.labelWidth.text = lengthSet[0]
+                self.labelHeight.text = lengthSet[1]
+            }
+        }
+        if angle < 11*CGFloat.pi/6 + 0.09{
+            if angle > 11*CGFloat.pi/6 - 0.09 {
+                self.labelAngle.text = angleSet[13]
+                self.labelWidth.text = lengthSet[3]
+                self.labelHeight.text = lengthSet[1]
+            }
+        }
+        if angle < 7*CGFloat.pi/4 + 0.09{
+            if angle > 7*CGFloat.pi/4 - 0.09 {
+                self.labelAngle.text = angleSet[14]
+                self.labelWidth.text = lengthSet[2]
+                self.labelHeight.text = lengthSet[2]
+            }
+        }
+        if angle < 5*CGFloat.pi/3 + 0.09{
+            if angle > 5*CGFloat.pi/3 - 0.09 {
+                self.labelAngle.text = angleSet[15]
+                self.labelWidth.text = lengthSet[1]
+                self.labelHeight.text = lengthSet[3]
             }
         }
     }
     
     func checkToSnap(){
         
-        snapAngle(desiredAngle: -0.0)
-        snapAngle(desiredAngle: -CGFloat.pi/6)
-        snapAngle(desiredAngle: -CGFloat.pi/4)
-        snapAngle(desiredAngle: -CGFloat.pi/3)
-        snapAngle(desiredAngle: -CGFloat.pi/2)
-        snapAngle(desiredAngle: -5*CGFloat.pi/6)
-        snapAngle(desiredAngle: -3*CGFloat.pi/4)
-        snapAngle(desiredAngle: -2*CGFloat.pi/3)
-        snapAngle(desiredAngle: -CGFloat.pi)
+//        snapAngle(desiredAngle: -0.0)
+//        snapAngle(desiredAngle: -CGFloat.pi/6)
+//        snapAngle(desiredAngle: -CGFloat.pi/4)
+//        snapAngle(desiredAngle: -CGFloat.pi/3)
+//        snapAngle(desiredAngle: -CGFloat.pi/2)
+//        snapAngle(desiredAngle: -5*CGFloat.pi/6)
+//        snapAngle(desiredAngle: -3*CGFloat.pi/4)
+//        snapAngle(desiredAngle: -2*CGFloat.pi/3)
+//        snapAngle(desiredAngle: -CGFloat.pi)
         
         snapAngle(desiredAngle: 0.0)
         snapAngle(desiredAngle: CGFloat.pi/6)
@@ -270,13 +354,13 @@ class UnitCircleView: UIView {
         snapAngle(desiredAngle: CGFloat.pi)
         
         
-//        snapAngle(desiredAngle: 7*CGFloat.pi/6)
-//        snapAngle(desiredAngle: 5*CGFloat.pi/4)
-//        snapAngle(desiredAngle: 4*CGFloat.pi/3)
-//        snapAngle(desiredAngle: 3*CGFloat.pi/2)
-//        snapAngle(desiredAngle: 11*CGFloat.pi/6)
-//        snapAngle(desiredAngle: 7*CGFloat.pi/4)
-//        snapAngle(desiredAngle: 5*CGFloat.pi/3)
+        snapAngle(desiredAngle: 7*CGFloat.pi/6)
+        snapAngle(desiredAngle: 5*CGFloat.pi/4)
+        snapAngle(desiredAngle: 4*CGFloat.pi/3)
+        snapAngle(desiredAngle: 3*CGFloat.pi/2)
+        snapAngle(desiredAngle: 11*CGFloat.pi/6)
+        snapAngle(desiredAngle: 7*CGFloat.pi/4)
+        snapAngle(desiredAngle: 5*CGFloat.pi/3)
         
     }
     /*
