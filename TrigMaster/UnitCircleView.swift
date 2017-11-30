@@ -144,48 +144,16 @@ class UnitCircleView: UIView {
         let xdistance = position!.x - self.frame.size.width/2
         let ydistance = -(position!.y - self.frame.size.height/2)
         angle = atan2(ydistance, xdistance)
-
         
-        if cos(angle) >= 0{
-            if cos(angle) < 0.00000000001{
-                self.labelWidth.text = "0"
-                self.labelHeight.text = "1"
-            }
-            else{
-                self.labelWidth.text = "\(abs(cos(angle)))"
-            }
-        }
-        if cos(angle) < 0{
-            if cos(angle) > -0.000000000001{
-                self.labelWidth.text = "0"
-                self.labelHeight.text = "1"
-            }
-            else{
-                self.labelWidth.text = "\(abs(cos(angle)))"
-            }
-        }
-        if sin(angle) >= 0{
-            if sin(angle) < 0.00000000001{
-                self.labelHeight.text = "0"
-                self.labelWidth.text = "1"
-            }
-            else{
-                self.labelHeight.text = "\(abs(sin(angle)))"
-            }
-        }
-        if sin(angle) < 0{
-            if sin(angle) > -0.00000000001{
-                self.labelHeight.text = "0"
-                self.labelWidth.text = "1"
-            }
-            else{
-                self.labelHeight.text = "\(abs(sin(angle)))"
-            }
-        }
+        self.labelWidth.text = "\(abs(cos(angle)))"
+        self.labelHeight.text = "\(abs(sin(angle)))"
+        
         if angle < 0 {
             angle = angle + 2*CGFloat.pi
         }
         self.labelAngle.text = "\(angle)"
+        
+        checkToSnap()
     }
 
     
