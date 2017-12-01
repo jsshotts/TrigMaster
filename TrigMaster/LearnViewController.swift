@@ -19,14 +19,13 @@ class LearnViewController: UIViewController {
     let divisorSet = ["", "/2", "/3", "/3", "/4", "/4", "/4", "/6", "/6", "/6"]
     let π = CGFloat.pi
     
-    let answerSet = ["1", "-1", "0", "1/2", "-1/2", "√2/2", "-√2/2", "√3/2", "-√3/2", "undefined", "2", "-2", "2/√2", "-2/√2", "2/√3", "-2/√3"]
+    let answerSet = ["1", "-1", "0", "1/2", "-1/2", "√2/2", "-√2/2", "√3/2", "-√3/2", "undefined", "2", "-2", "2/√2", "-2/√2", "2/√3", "-2/√3", "1/√3", "-1/√3", "√3", "-√3"]
     var tempTrigFunc = ""
     var tempDivisor = ""
     var tempAnswer = CGFloat(0)
     var tempAnswerString = ""
     
     @IBOutlet weak var questionLabel: UILabel!
-
     
     @IBOutlet weak var button1: UIButton!
     
@@ -93,18 +92,17 @@ class LearnViewController: UIViewController {
         buttonSet[Int(valueLocation)]!.setTitle("\(tempAnswerString)", for: UIControlState.normal)
         buttonSet.remove(at: Int(valueLocation))
         
-        
         tempAnswerSet.remove(at: answerIndex)
         
-        let button1tempAnswerIndex = Int(arc4random_uniform(15))
+        let button1tempAnswerIndex = Int(arc4random_uniform(19))
         buttonSet[0]!.setTitle(tempAnswerSet[button1tempAnswerIndex], for: UIControlState.normal)
         tempAnswerSet.remove(at: button1tempAnswerIndex)
         
-        let button2tempAnswerIndex = Int(arc4random_uniform(14))
+        let button2tempAnswerIndex = Int(arc4random_uniform(18))
         buttonSet[1]!.setTitle(tempAnswerSet[button2tempAnswerIndex], for: UIControlState.normal)
         tempAnswerSet.remove(at: button2tempAnswerIndex)
         
-        let button3tempAnswerIndex = Int(arc4random_uniform(13))
+        let button3tempAnswerIndex = Int(arc4random_uniform(17))
         buttonSet[2]!.setTitle(tempAnswerSet[button3tempAnswerIndex], for: UIControlState.normal)
 
         
@@ -116,8 +114,10 @@ class LearnViewController: UIViewController {
         
         if tempAnswer < -2.01{
             setButtons(answerIndex: 9)
-        } else if tempAnswer < -1.42{
+        }else if tempAnswer < -1.733{
             setButtons(answerIndex: 11)
+        }else if tempAnswer < -1.42{
+            setButtons(answerIndex: 19)
         } else if tempAnswer < -1.16{
             setButtons(answerIndex: 13)
         } else if tempAnswer < -1.001{
@@ -126,14 +126,18 @@ class LearnViewController: UIViewController {
             setButtons(answerIndex: 1)
         } else if tempAnswer < -0.708{
             setButtons(answerIndex: 8)
-        } else if tempAnswer < -0.51{
+        } else if tempAnswer < -0.578{
             setButtons(answerIndex: 6)
+        } else if tempAnswer < -0.51{
+            setButtons(answerIndex: 17)
         } else if tempAnswer < -0.01{
             setButtons(answerIndex: 4)
         } else if tempAnswer < 0.498{
             setButtons(answerIndex: 2)
-        } else if tempAnswer < 0.706{
+        } else if tempAnswer < 0.576{
             setButtons(answerIndex: 3)
+        } else if tempAnswer < 0.706{
+            setButtons(answerIndex: 16)
         } else if tempAnswer < 0.865{
             setButtons(answerIndex: 5)
         } else if tempAnswer < 0.900{
@@ -142,8 +146,10 @@ class LearnViewController: UIViewController {
             setButtons(answerIndex: 0)
         } else if tempAnswer < 1.413{
             setButtons(answerIndex: 14)
-        } else if tempAnswer < 1.998{
+        } else if tempAnswer < 1.731{
             setButtons(answerIndex: 12)
+        } else if tempAnswer < 1.998{
+            setButtons(answerIndex: 18)
         } else if tempAnswer < 2.99{
             setButtons(answerIndex: 10)
         } else{
@@ -220,8 +226,6 @@ class LearnViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //view.backgroundColor? = UIColor.darkGray
         tempTrigFunc = trigSet[Int(arc4random_uniform(6))]
         tempDivisor = divisorSet[Int(arc4random_uniform(10))]
 

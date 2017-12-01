@@ -32,7 +32,6 @@ class IncorrectViewController: UIViewController {
         
         UnitCircleView.setBackgroundColor()
         UnitCircleView.setLabelTextForFirstTime()
-        //view.backgroundColor? = UIColor.darkGray
         UnitCircleView.isUserInteractionEnabled = false
         questionLabel.text = labelText
     }

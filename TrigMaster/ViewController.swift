@@ -19,14 +19,7 @@ class ViewController: UIViewController {
         UnitCircleView.setBackgroundColor()
         UnitCircleView.setLabelTextForFirstTime()
         UnitCircleView.isUserInteractionEnabled = true
-//        let canvasView = UnitCircleView(frame: CGRect(x:0, y:0, width: self.view.frame.size.width, height: self.view.frame.size.height/2))
-//        canvasView.radius = (self.view.frame.size.height/2)/2.4
-//        canvasView.setBackgroundColor()
-//        canvasView.setLabelTextForFirstTime()
-//        canvasView.isUserInteractionEnabled = true
-//        view.addSubview(canvasView)
-        //view.backgroundColor? = UIColor.darkGray
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     override func didReceiveMemoryWarning() {

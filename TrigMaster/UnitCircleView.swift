@@ -30,25 +30,8 @@ class UnitCircleView: UIView {
     let labelAngle = UILabel(frame: CGRect(x: 20, y: 60, width: 50, height: 15))
 
     func setLabelTextForFirstTime() {
-        
-        labelWidth.text = "\(abs(cos(angle)))"
-        if abs(cos(angle)) < 0.000001{
-            labelWidth.text = "0"
-            labelHeight.text = "1"
-        }
         labelWidth.textColor = UIColor.cyan
-        
-        labelHeight.text = "\(abs(sin(angle)))"
-        if abs(sin(angle)) < 0.000001{
-            labelHeight.text = "0"
-            labelWidth.text = "1"
-        }
         labelHeight.textColor = UIColor.magenta
-        
-        labelAngle.text = "\(angle)"
-        if angle == 0.0{
-            labelAngle.text = "0"
-        }
         labelAngle.textColor = UIColor.orange
         
         checkToSnap()
@@ -182,8 +165,6 @@ class UnitCircleView: UIView {
             self.angle = desiredAngle
             }
         }
-        
-        print(desiredAngle)
     
         if angle < 0.0 + 0.09{
             if self.angle > 0.0 - 0.09{
@@ -223,7 +204,7 @@ class UnitCircleView: UIView {
         if angle < 5*CGFloat.pi/6 + 0.09{
             if angle > 5*CGFloat.pi/6 - 0.09{
                 self.labelAngle.text = angleSet[5]
-                self.labelWidth.text = lengthSet[5]
+                self.labelWidth.text = lengthSet[7]
                 self.labelHeight.text = lengthSet[1]
             }
         }
@@ -237,7 +218,7 @@ class UnitCircleView: UIView {
         if angle < 2*CGFloat.pi/3 + 0.09{
             if angle > 2*CGFloat.pi/3 - 0.09{
                 self.labelAngle.text = angleSet[7]
-                self.labelWidth.text = lengthSet[7]
+                self.labelWidth.text = lengthSet[5]
                 self.labelHeight.text = lengthSet[3]
             }
         }
@@ -273,7 +254,7 @@ class UnitCircleView: UIView {
             if angle > 3*CGFloat.pi/2 - 0.09 {
                 self.labelAngle.text = angleSet[12]
                 self.labelWidth.text = lengthSet[0]
-                self.labelHeight.text = lengthSet[5]
+                self.labelHeight.text = lengthSet[8]
             }
         }
         if angle < 11*CGFloat.pi/6 + 0.09{
@@ -321,7 +302,6 @@ class UnitCircleView: UIView {
         snapAngle(desiredAngle: 2*CGFloat.pi/3)
         snapAngle(desiredAngle: CGFloat.pi)
         
-        
         snapAngle(desiredAngle: 7*CGFloat.pi/6)
         snapAngle(desiredAngle: 5*CGFloat.pi/4)
         snapAngle(desiredAngle: 4*CGFloat.pi/3)
@@ -329,7 +309,6 @@ class UnitCircleView: UIView {
         snapAngle(desiredAngle: 11*CGFloat.pi/6)
         snapAngle(desiredAngle: 7*CGFloat.pi/4)
         snapAngle(desiredAngle: 5*CGFloat.pi/3)
-        
     }
     /*
     // Only override draw() if you perform custom drawing.
