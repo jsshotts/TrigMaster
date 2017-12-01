@@ -223,78 +223,78 @@ class UnitCircleView: UIView {
         if angle < 5*CGFloat.pi/6 + 0.09{
             if angle > 5*CGFloat.pi/6 - 0.09{
                 self.labelAngle.text = angleSet[5]
-                self.labelWidth.text = lengthSet[3]
+                self.labelWidth.text = lengthSet[5]
                 self.labelHeight.text = lengthSet[1]
             }
         }
         if angle < 3*CGFloat.pi/4 + 0.09{
             if angle > 3*CGFloat.pi/4 - 0.09{
                 self.labelAngle.text = angleSet[6]
-                self.labelWidth.text = lengthSet[2]
+                self.labelWidth.text = lengthSet[6]
                 self.labelHeight.text = lengthSet[2]
             }
         }
         if angle < 2*CGFloat.pi/3 + 0.09{
             if angle > 2*CGFloat.pi/3 - 0.09{
                 self.labelAngle.text = angleSet[7]
-                self.labelWidth.text = lengthSet[1]
+                self.labelWidth.text = lengthSet[7]
                 self.labelHeight.text = lengthSet[3]
             }
         }
         if angle < CGFloat.pi + 0.09{
             if angle > CGFloat.pi - 0.09 {
                 self.labelAngle.text = angleSet[8]
-                self.labelWidth.text = lengthSet[4]
+                self.labelWidth.text = lengthSet[8]
                 self.labelHeight.text = lengthSet[0]
             }
         }
         if angle < 7*CGFloat.pi/6 + 0.09{
             if angle > 7*CGFloat.pi/6 - 0.09 {
                 self.labelAngle.text = angleSet[9]
-                self.labelWidth.text = lengthSet[3]
-                self.labelHeight.text = lengthSet[1]
+                self.labelWidth.text = lengthSet[7]
+                self.labelHeight.text = lengthSet[5]
             }
         }
         if angle < 5*CGFloat.pi/4 + 0.09{
             if angle > 5*CGFloat.pi/4 - 0.09 {
                 self.labelAngle.text = angleSet[10]
-                self.labelWidth.text = lengthSet[2]
-                self.labelHeight.text = lengthSet[2]
+                self.labelWidth.text = lengthSet[6]
+                self.labelHeight.text = lengthSet[6]
             }
         }
         if angle < 4*CGFloat.pi/3 + 0.09{
             if angle > 4*CGFloat.pi/3 - 0.09 {
                 self.labelAngle.text = angleSet[11]
-                self.labelWidth.text = lengthSet[1]
-                self.labelHeight.text = lengthSet[3]
+                self.labelWidth.text = lengthSet[5]
+                self.labelHeight.text = lengthSet[7]
             }
         }
         if angle < 3*CGFloat.pi/2 + 0.09{
             if angle > 3*CGFloat.pi/2 - 0.09 {
                 self.labelAngle.text = angleSet[12]
                 self.labelWidth.text = lengthSet[0]
-                self.labelHeight.text = lengthSet[8]
+                self.labelHeight.text = lengthSet[5]
             }
         }
         if angle < 11*CGFloat.pi/6 + 0.09{
             if angle > 11*CGFloat.pi/6 - 0.09 {
                 self.labelAngle.text = angleSet[13]
                 self.labelWidth.text = lengthSet[3]
-                self.labelHeight.text = lengthSet[1]
+                self.labelHeight.text = lengthSet[5]
             }
         }
         if angle < 7*CGFloat.pi/4 + 0.09{
             if angle > 7*CGFloat.pi/4 - 0.09 {
                 self.labelAngle.text = angleSet[14]
                 self.labelWidth.text = lengthSet[2]
-                self.labelHeight.text = lengthSet[2]
+                self.labelHeight.text = lengthSet[6]
             }
         }
         if angle < 5*CGFloat.pi/3 + 0.09{
             if angle > 5*CGFloat.pi/3 - 0.09 {
                 self.labelAngle.text = angleSet[15]
                 self.labelWidth.text = lengthSet[1]
-                self.labelHeight.text = lengthSet[3]
+                self.labelHeight.text = lengthSet[7]
             }
         }
     }
