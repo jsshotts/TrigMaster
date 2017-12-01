@@ -11,7 +11,7 @@ import UIKit
 class UnitCircleView: UIView {
     
     let angleSet = ["0", "π/6", "π/4", "π/3", "π/2", "5π/6", "3π/4", "2π/3", "π", "7π/6", "5π/4", "4π/3", "3π/2", "11π/6", "7π/4", "5π/3"]
-    let lengthSet = ["0", "1/2", "√2/2", "√3/2", "1"]
+    let lengthSet = ["0", "1/2", "√2/2", "√3/2", "1", "-1/2", "-√2/2", "-√3/2", "-1"]
     
     var angle = CGFloat(0)
     
@@ -145,8 +145,8 @@ class UnitCircleView: UIView {
         let ydistance = -(position!.y - self.frame.size.height/2)
         angle = atan2(ydistance, xdistance)
         
-        self.labelWidth.text = "\(abs(cos(angle)))"
-        self.labelHeight.text = "\(abs(sin(angle)))"
+        self.labelWidth.text = "\(cos(angle))"
+        self.labelHeight.text = "\(sin(angle))"
         
         if angle < 0 {
             angle = angle + 2*CGFloat.pi
@@ -164,8 +164,8 @@ class UnitCircleView: UIView {
         let ydistance = -(position!.y - self.frame.size.height/2)
         angle = atan2(ydistance, xdistance)
 
-        self.labelWidth.text = "\(abs(cos(angle)))"
-        self.labelHeight.text = "\(abs(sin(angle)))"
+        self.labelWidth.text = "\(cos(angle))"
+        self.labelHeight.text = "\(sin(angle))"
         
         if angle < 0 {
             angle = angle + 2*CGFloat.pi
@@ -273,7 +273,7 @@ class UnitCircleView: UIView {
             if angle > 3*CGFloat.pi/2 - 0.09 {
                 self.labelAngle.text = angleSet[12]
                 self.labelWidth.text = lengthSet[0]
-                self.labelHeight.text = lengthSet[1]
+                self.labelHeight.text = lengthSet[8]
             }
         }
         if angle < 11*CGFloat.pi/6 + 0.09{
