@@ -68,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sin pi/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feo-Ur-r7D">
-                                <rect key="frame" x="103" y="160" width="208" height="111"/>
+                                <rect key="frame" x="103" y="160" width="208" height="136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" name="VinylRegular" family="Vinyl" pointSize="42"/>
                                 <color key="textColor" red="0.92478615050000001" green="0.81579083200000002" blue="0.47201168539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -147,7 +147,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUt-hY-tqa">
-                                <rect key="frame" x="8" y="26" width="88" height="49"/>
+                                <rect key="frame" x="8" y="26" width="88" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VinylRegular" family="Vinyl" pointSize="18"/>
                                 <state key="normal" title="&lt; Back">
@@ -217,7 +217,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question = Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-60-nHx">
-                                <rect key="frame" x="0.0" y="406" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="406" width="414" height="136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" name="VinylRegular" family="Vinyl" pointSize="44"/>
                                 <color key="textColor" red="0.92478615050000001" green="0.81579083200000002" blue="0.47201168539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -258,7 +258,7 @@
                                 <rect key="frame" x="117" y="580" width="180" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.92478615050000001" green="0.81579083200000002" blue="0.47201168539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="VinylRegular" family="Vinyl" pointSize="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="→">
                                     <color key="titleColor" red="0.33261883260000003" green="0.142157644" blue="0.21560999750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -274,7 +274,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question = Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnf-mY-R7l">
-                                <rect key="frame" x="0.0" y="404" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="404" width="414" height="136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" name="VinylRegular" family="Vinyl" pointSize="44"/>
                                 <color key="textColor" red="0.92478615050000001" green="0.81579083200000002" blue="0.47201168539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
